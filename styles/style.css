@@ -1,25 +1,48 @@
 /* место для вашего кода */
-body{
-  display:block;
-  margin: auto;
-}
+
 .header{
-  box-sizing: border-box;
   display: grid;
+  padding: 92px 49px 92px 51px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(1, 1fr);
-}
 
+}
+.header__menu{
+  display: flex;
+  align-items: center;
+}
 .header__links-list{
   display: flex;
   flex-direction: row;
   gap: 32px;
+  list-style: circle;
+}
+.header__links-list-item{
+
+}
+.header__links-list_no-bullit{
+  list-style: none;
+}
+.header__link{
+
+}
+.header__link_active{
+
+}
+.header__logo{
+  display: grid;
+  grid-column: 3;
+
+  justify-items: center;
+
 }
 .header__logo-image {
   width: 148px;
   height: 105px;
-  flex-shrink: 0;
 }
-a{
-  display:block;
+.address{
+  grid-column: 5;
+}
+.header__address{
+
 }
