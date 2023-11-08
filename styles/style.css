@@ -37,13 +37,10 @@ body {
   text-decoration: underline;
   text-underline-offset: 4.5px;
   /*border-bottom: 1px solid black;*/
-
-  
 }
 .header__link_active {
   text-decoration: none;
   border-bottom: none;
-
 }
 .header__logo {
   grid-column: 2;
@@ -59,9 +56,8 @@ body {
   align-self: center;
   line-height: 24.3px;
   font-style: normal;
-  
 }
-.address__curent-address{
+.address__curent-address {
   font-style: normal;
 }
 /*address{
@@ -78,6 +74,6 @@ body {
   text-underline-offset: 4px;
 }
 .header__address {
-  position:relative;
+  position: relative;
   right: 3px;
 }
