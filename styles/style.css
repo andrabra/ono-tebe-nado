@@ -2,6 +2,7 @@ body {
   width: 1440px;
   height: 2844px;
   margin: auto;
+
   color: #000;
   font-family: Raleway;
   font-size: 18px;
@@ -10,12 +11,17 @@ body {
   line-height: normal;
 }
 
+.main{
+
+}
+
 .header {
+  max-width: 1440;
+  margin: auto;
   padding: 92px 49px 92px 51px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  column-gap: 0px;
 }
 
 .header__menu {
@@ -54,17 +60,22 @@ body {
   justify-self: center;
 }
 .header__logo-image {
-  width: 148px;
-  height: 105px;
+  max-width: 148px;
+  max-height: 105px;
+  width: 100%;
+  height: 100%;
 }
 
 .address {
   grid-column: 3;
   justify-self: right;
   align-self: center;
-  line-height: 24.4px;
+  color: #000;
+  font-family: Raleway;
+  font-size: 18px;
   font-style: normal;
-
+  font-weight: 400;
+  line-height: 24.3px; /* 135% */
 }
 
 .address__curent-address {
@@ -86,45 +97,61 @@ body {
   text-underline-offset: 4.3px;
 }
 
+/*надо поменять релатив*/
 .header__address {
-  position: relative;
-  right: 3px;
+  /*position: relative;
+  right: 3px;*/
 }
-.cover{
+
+.cover {
   width: 1440px;
   height: 757px;
   background-image: url(../images/cover.jpg);
   color: #fff;
-}
-.overlay{
-  display: block;
   position: relative;
-  background-color: #000 .6;
+  z-index: -1;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(000, 000, 000, .6);
+  position: relative;
   z-index: 1;
 }
-.cover__title{
+.cover__title {
   display: flex;
-  justify-content: space-around;
-  text-align: start;
   padding: 165px 50px 237px;
 }
-.letter-spacing-extended{
-
+.letter-spacing {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%; /* 115px */
+  letter-spacing: 30px;
+  text-transform: uppercase;
 }
-.aligned-text{
-  
+.letter-spacing-extended {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: 60px;
+  text-transform: uppercase;
 }
-.aligned-text_center{
-
+.aligned-text {
 }
-.aligned-text_right{
-
+.aligned-text_center {
 }
-.cover__description{
-
+.aligned-text_right {
+}
+.cover__description {
 }
 
-.bet-button{
+.bet-button {
   text-decoration: none;
   border-color: #fff;
 }
