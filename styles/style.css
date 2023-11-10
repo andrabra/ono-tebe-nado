@@ -413,13 +413,20 @@ body {
   width: 100%;
   display:flex;
   flex-direction: row;
-  gap: 255px;
+  justify-content: space-between;
+  gap: 250px;
+  padding: 84px 50px;
+}
+
+.footer:last-child {
+  gap: 0px;
 }
 
 .footer__address {
 }
 
 .footer__menu {
+  max-width: 150px;
 }
 
 .footer__menu-list {
@@ -427,18 +434,20 @@ body {
 }
 
 .footer__menu-list-item {
+  text-align: center;
 }
 
 .footer__menu-link {
 }
 
 .footer__menu-link_active {
+  text-decoration: none;
 }
 
 .footer__social-list{
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 48px;
 
 }
 .footer__social-list-item{
@@ -450,7 +459,7 @@ body {
 }
 
 .footer__social-icon{
-  width: 240px;
+  width: 48px;
   height: 48px;
 
 }
