@@ -397,7 +397,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 180px 50px;
+  padding: 185px 50px;
 }
 
 .footer:last-child {
