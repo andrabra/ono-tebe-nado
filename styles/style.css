@@ -120,52 +120,37 @@ main {
 .cover__title {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   justify-content: space-between;
   position: relative;
   z-index: 3;
   font-family: Raleway, sans-serif;
   text-transform: uppercase;
   color: #fff;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
 }
 
 .letter-spacing {
-  font-size: 100px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 115%; /* 115px */
-  letter-spacing: 23px;
+  letter-spacing: 30px;
 }
 
 .letter-spacing-extended {
-  font-size: 100px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 115%;
   letter-spacing: 60px;
 }
 
-.letter-spacing-extended-right {
-  font-size: 100px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 115%;
-  letter-spacing: 50px;
-}
-
-.letter-spacing-right {
-  font-size: 100px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 100%;
-  letter-spacing: 27px;
-}
-
 .letter-spacing-right_end {
-  font-size: 100px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.aligned-text .letter-spacing {
+  line-height: 115%;
+}
+
+.aligned-text .letter-spacing-extended {
+  line-height: 115%;
 }
 
 .aligned-text_center {
@@ -181,22 +166,21 @@ main {
   flex-direction: row;
   justify-content: end;
   gap: 80px;
-  padding-top: 126px;
+  padding-top: 135px;
   position: relative;
   z-index: 3;
-
+  font-family: Raleway, sans-serif;
   text-transform: uppercase;
   color: #fff;
-  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  word-spacing: 18px;
 }
 
 .cover__description-text {
   text-align: center;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px; /* 127.273% */
-  word-spacing: 18px;
   padding-top: 13px;
 }
 
@@ -205,13 +189,13 @@ main {
   text-decoration: none;
   color: #fff;
   text-align: center;
-  font-family: Raleway, sans-serif;
+  font-family: Raleway;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
-  padding: 12px 31px;
+  padding: 12px 32px;
   background: transparent;
 }
 
@@ -260,7 +244,6 @@ main {
   min-height: 450px;
   width: 100%;
   height: 100%;
-  /*Правило центрования фона*/
   background-position: center;
   background-size: cover;
   position: relative;
@@ -388,7 +371,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 185px 50px;
+  padding: 180px 50px;
 }
 
 .footer:last-child {
